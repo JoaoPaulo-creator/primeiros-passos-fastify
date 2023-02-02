@@ -16,7 +16,7 @@ model CarModel {
   color     String
   version   String
   plate     String
-  createdAt DateTime
+  createdAt DateTime @default(now())
 
   @@map("carmodel")
 }
